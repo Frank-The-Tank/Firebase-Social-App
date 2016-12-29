@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1818C42A1D49892EE25619EA19FEBABAD5EF0AAD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C8461712A1506EDE5AC20F3C02BB285B5CF165B" : 9223372036854775807,
+    "1818C42A1D49892EE25619EA19FEBABAD5EF0AAD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2AEECFD4-1C81-41BD-89C0-C4228D5485D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C8461712A1506EDE5AC20F3C02BB285B5CF165B" : "..",
+    "1818C42A1D49892EE25619EA19FEBABAD5EF0AAD" : "Social%20App\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Social App",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Social App.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/FrankGarcia_\/udemy-ios-course.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C8461712A1506EDE5AC20F3C02BB285B5CF165B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Frank-The-Tank\/Social-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1818C42A1D49892EE25619EA19FEBABAD5EF0AAD"
+    }
+  ]
+}
