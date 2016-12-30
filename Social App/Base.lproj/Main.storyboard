@@ -43,7 +43,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbm-6U-gfg">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, account will automatically be created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-LH-QLx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an account will automatically be created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-LH-QLx">
                                         <rect key="frame" x="8" y="8" width="359" height="59"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +76,9 @@
                                     <constraint firstAttribute="height" constant="150" id="paZ-bL-a0a"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXD-We-oC7"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wMv-jY-JAT">
                                 <rect key="frame" x="46" y="420" width="283" height="117"/>
@@ -99,6 +102,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REG-a8-NHT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -122,10 +128,14 @@
                             <constraint firstItem="wMv-jY-JAT" firstAttribute="top" secondItem="UaO-ja-kz2" secondAttribute="bottom" constant="40" id="lQ0-eo-fZ8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="j0v-mg-hVx" id="YnW-oD-wML"/>
+                        <outlet property="passwordField" destination="wyK-lj-PP3" id="nFs-ZE-ycw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="163"/>
+            <point key="canvasLocation" x="-193" y="152"/>
         </scene>
     </scenes>
     <resources>
