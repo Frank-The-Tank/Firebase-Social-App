@@ -1,15 +1,15 @@
 //
-//  EnhancedView.swift
+//  CircleView.swift
 //  Social App
 //
-//  Created by Frank Garcia on 12/29/16.
+//  Created by Frank Garcia on 12/31/16.
 //  Copyright © 2016 Malibit. All rights reserved.
 //
 
 import UIKit
 
-class EnhancedView: UIView {
-
+class CircleView: UIImageView {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -17,8 +17,12 @@ class EnhancedView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
+    }
+
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         
+        layer.cornerRadius = self.frame.width / 2
     }
 
 }

@@ -19,6 +19,7 @@
 		866FFB2D1E15CC42009FEE00 /* EnhancedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FFB2C1E15CC42009FEE00 /* EnhancedField.swift */; };
 		866FFB2F1E15CD6D009FEE00 /* EnhancedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FFB2E1E15CD6D009FEE00 /* EnhancedBtn.swift */; };
 		866FFB351E16C27E009FEE00 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FFB341E16C27E009FEE00 /* FeedVC.swift */; };
+		866FFB371E182280009FEE00 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FFB361E182280009FEE00 /* CircleView.swift */; };
 		EE233D0272FC6BE356D2FF64 /* Pods_Social_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9798FCD10EB6DFF714F0E70 /* Pods_Social_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		866FFB2E1E15CD6D009FEE00 /* EnhancedBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnhancedBtn.swift; sourceTree = "<group>"; };
 		866FFB301E15F515009FEE00 /* Social App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social App.entitlements"; sourceTree = "<group>"; };
 		866FFB341E16C27E009FEE00 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		866FFB361E182280009FEE00 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		B9798FCD10EB6DFF714F0E70 /* Pods_Social_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				866FFB2A1E15CA39009FEE00 /* RoundBtn.swift */,
 				866FFB2C1E15CC42009FEE00 /* EnhancedField.swift */,
 				866FFB2E1E15CD6D009FEE00 /* EnhancedBtn.swift */,
+				866FFB361E182280009FEE00 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866FFB371E182280009FEE00 /* CircleView.swift in Sources */,
 				866FFB111E1583CA009FEE00 /* SignInVC.swift in Sources */,
 				866FFB2B1E15CA39009FEE00 /* RoundBtn.swift in Sources */,
 				866FFB2D1E15CC42009FEE00 /* EnhancedField.swift in Sources */,
