@@ -34,7 +34,7 @@ class SignInVC: UIViewController {
     }
     
     
-    // Facebook Authentication followed by Firebase Authentication
+    // MARK: Facebook Authentication followed by Firebase Authentication
 
     @IBAction func facebookBtnTapped(_ sender: Any) {
         
@@ -62,14 +62,15 @@ class SignInVC: UIViewController {
             } else {
                 print("FRANK: Succesfully authenticated with Firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
             
         })
     }
     
-    // Standard email verification with Firebase
+    // MARK: Standard email verification with Firebase
 
     @IBAction func signinTapped(_ sender: Any) {
         
@@ -78,7 +79,8 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("FRANK: Email user authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
@@ -87,7 +89,8 @@ class SignInVC: UIViewController {
                         } else {
                             print("FRANK: New email user authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -96,8 +99,10 @@ class SignInVC: UIViewController {
         }
     }
     
-    // Saving ID to the Keychain
-    func completeSignIn(id: String) {
+    // MARK: Saving ID to the Keychain and Creating Firebase Database User
+    
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("FRANK: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)

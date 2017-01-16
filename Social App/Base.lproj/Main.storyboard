@@ -153,12 +153,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFk-en-o8U" customClass="EnhancedView" customModule="Social_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="a13-zf-V2k">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="a13-zf-V2k">
                                         <rect key="frame" x="20" y="20" width="38" height="37"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="z1j-ce-VaT"/>
                                             <constraint firstAttribute="width" constant="38" id="zJ9-4z-1OD"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UMa-Y7-ZNJ" appends="YES" id="vvu-gK-x3N"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5m-ai-eWa">
                                         <rect key="frame" x="157" y="21" width="60" height="36"/>
@@ -168,6 +172,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99913424250000005" green="0.79372996090000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="c5m-ai-eWa" firstAttribute="centerX" secondItem="RFk-en-o8U" secondAttribute="centerX" id="GWj-FX-hID"/>
                                     <constraint firstItem="a13-zf-V2k" firstAttribute="leading" secondItem="RFk-en-o8U" secondAttribute="leading" constant="20" id="IY0-pm-uTg"/>
@@ -346,8 +351,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvG-7a-HMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UMa-Y7-ZNJ">
+                    <connections>
+                        <action selector="signOutTapped:" destination="BSA-hP-DQh" id="C3c-SB-R4e"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="134" y="168"/>
+            <point key="canvasLocation" x="222" y="168"/>
         </scene>
     </scenes>
     <resources>
